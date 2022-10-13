@@ -16,7 +16,8 @@ header {/*HEADER BASE LAYER*/
     position: fixed;
     height: 5em;
     width: 100%;
-    background-color:rgb(66, 63, 69);
+    /*background-color: rgb(51, 103, 51, 0.851)*/
+    background-color:rgba(50, 52, 55, 0.851);
 }
 
 #header-box {/*HEADER*/
@@ -62,7 +63,6 @@ header {/*HEADER BASE LAYER*/
     background: transparent;
 }
 .cv-dec {
-    
 }
 
 .nav-text-dec:visited {/*HEADER -- LINK*/
@@ -73,22 +73,34 @@ header {/*HEADER BASE LAYER*/
     font-size:2em;
 }
 
-main {
-    background-color: rgb(25, 33, 46);
+body {/*MAIN*/
+    /*background-color: rgb(73, 203, 73)*/
+    background-color: rgba(50, 52, 55, 1);
 }
 
-.main-space {/*MAIN*/
+.main-space {/*MAIN -- blank space*/
     height: 5em;
     width: 100%;
 }
 
+.beginning {/*MAIN -- start*/
+    float: left;
+    margin-left: 5em;
+    width: 50%;
+    border-right: 1px solid black;
+}
+
 #self-img {/*IMAGE -- self*/
-    margin: 0;
+    margin: 5em 20em 0em 0em;
     padding: 0;
     height: 200px;
     width: 200px;
     border: 2px solid white;
     border-radius: 50%;
+    float: right;
+}
+
+.self-img {/*IMAGE -- self EDIT: not working yet*/
 }
 
 a:hover {/*GENERAL -- LINK*/
