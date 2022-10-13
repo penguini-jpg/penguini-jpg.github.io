@@ -98,6 +98,7 @@ body {/*MAIN*/
     border: 2px solid white;
     border-radius: 50%;
     float: right;
+    justify-content: center;
 }
 
 .self-img {/*IMAGE -- self EDIT: not working yet*/
