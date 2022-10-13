@@ -1,0 +1,122 @@
+* {
+    scroll-behavior: smooth;
+    color: white;
+    /*background-color: red;*/
+}
+
+header {/*HEADER BASE LAYER*/
+    margin: 0;
+    padding-left: 1em;
+    font-size: 1em !important;
+    position: fixed;
+    height: 5em;
+    width: 100%;
+    background-color:rgb(66, 63, 69);
+}
+
+#header-box {/*HEADER*/
+    margin: 0;
+    width: 100%;
+    padding-right: 10em;
+    background: transparent;
+}
+
+#head-name {/*HEADER -- box*/
+    display: flex;
+    position: fixed;
+    margin: auto 0;
+    width: 6.7em;
+    height: 0em;
+    font-size: 1em !important;
+}
+
+#head-nav {/*HEADER -- box*/
+    display: flex;
+    margin-top: 1.8em;
+    list-style: none;
+    justify-content: right;
+    padding-right: 8em;
+    word-spacing: 4em;
+}
+
+.head-nav-item {/*HEADER -- item*/
+    margin: 0em 1.5em;
+    width: 2em;
+    height: 3em;
+    
+}
+.nav-text-dec {/*HEADER*/
+    font-size: 1em !important;
+}
+
+#head-button {/*HEADER*/
+    border: 0.25em solid red;
+    padding: 1em 2em;
+    border-radius: 1em;
+    margin: -1em 0;
+    background: transparent;
+}
+.cv-dec {
+    
+}
+
+.nav-text-dec:visited {/*HEADER -- LINK*/
+    color: blue;
+}
+
+.nav-text-dec:hover {/*HEADER -- LINK*/
+    font-size:2em;
+}
+
+main {
+    background-color: rgb(25, 33, 46);
+}
+
+.main-space {/*MAIN*/
+    height: 5em;
+    width: 100%;
+
+}
+
+a:hover {/*GENERAL -- LINK*/
+    border: 0.25em solid grey;
+    border-radius: 1em;
+    padding: 0.25em;
+    overflow: visible;
+}
+
+a:active {/*GENERAL -- LINK*/
+    font-size: o.5em;
+    border: 0.25em solid grey;
+    border-radius: 1em;
+    padding: 0.25em;
+    overflow: visible;
+}
+
+a:after {/*GENERAL -- LINK*/
+    border: 0.25em solid grey;
+    border-radius: 1em;
+    padding: 0.25em;
+    overflow: visible;
+    color:blue;
+}
+
+a {/*GENERAL -- LINK*/
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-text-dec:active {}
+
+.red-text {/*GENERAL -- COLOR*/
+    color: red;
+}
+
+p {font-size: 1.4em;}
+
+h1 {font-size: 4em;}
+h2 {font-size: 3.75em;}
+h3 {font-size: 3.25em;}
+h4 {font-size: 2.75em;}
+h5 {font-size: 2.25em;}
+h6 {font-size: 1.75em;}
