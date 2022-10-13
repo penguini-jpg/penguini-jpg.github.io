@@ -80,7 +80,15 @@ main {
 .main-space {/*MAIN*/
     height: 5em;
     width: 100%;
+}
 
+#self-img {/*IMAGE -- self*/
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
 }
 
 a:hover {/*GENERAL -- LINK*/
