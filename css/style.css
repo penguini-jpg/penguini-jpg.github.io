@@ -9,6 +9,12 @@ html body {
     /*background-color: red;*/
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
 header {/*HEADER BASE LAYER*/
     margin: 0;
     padding-left: 1em;
@@ -29,6 +35,7 @@ header {/*HEADER BASE LAYER*/
 
 #head-name {/*HEADER -- box*/
     display: flex;
+    justify-content: flex-start;
     position: fixed;
     margin: auto 0;
     width: 6.7em;
@@ -43,7 +50,10 @@ header {/*HEADER BASE LAYER*/
     justify-content: right;
     padding-right: 8em;
     word-spacing: 4em;
+    justify-content: flex-end;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
 
 .head-nav-item {/*HEADER -- item*/
     margin: 0em 1.5em;
@@ -73,63 +83,46 @@ header {/*HEADER BASE LAYER*/
     font-size:2em;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
 body {/*MAIN*/
     /*background-color: rgb(73, 203, 73)*/
     background-color: rgba(50, 52, 55, 1);
 }
 
 .main-space {/*MAIN -- blank space*/
-    height: 5em;
+    height: 5rem;
     width: 100%;
 }
 
-.beginning {/*MAIN -- start*/
-    float: left;
-    margin-left: 5em;
-    width: 50%;
-    border-right: 1px solid black;
-}
+/* ------------------------------------------------------------------------------------------------------------------------------ */
 
-#self-img {/*IMAGE -- self*/
-    margin: 5em 20em 0em 0em;
-    padding: 0;
-    height: 200px;
-    width: 200px;
-    border: 2px solid white;
-    border-radius: 50%;
-    float: right;
-    justify-content: center;
-}
-
-.self-img {/*IMAGE -- self EDIT: not working yet*/
-}
-
-a:hover {/*GENERAL -- LINK*/
-    border: 0.25em solid grey;
-    border-radius: 1em;
-    padding: 0.25em;
+.link:hover {/*GENERAL -- LINK*/
+    border: 0.25rem solid grey;
+    border-radius: 1rem;
+    padding: 0.25rem;
     overflow: visible;
 }
 
-a:active {/*GENERAL -- LINK*/
-    font-size: o.5em;
-    border: 0.25em solid grey;
-    border-radius: 1em;
-    padding: 0.25em;
+.link:active {/*GENERAL -- LINK*/
+    font-size: o.5rem;
+    border: 0.25rem solid grey;
+    border-radius: 1rem;
+    padding: 0.25rem;
     overflow: visible;
 }
 
-a:after {/*GENERAL -- LINK*/
-    border: 0.25em solid grey;
-    border-radius: 1em;
-    padding: 0.25em;
+.link:after {/*GENERAL -- LINK*/
+    border: 0.25rem solid grey;
+    border-radius: 1rem;
+    padding: 0.25rem;
     overflow: visible;
     color:blue;
 }
 
 a {/*GENERAL -- LINK*/
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .nav-text-dec:active {}
@@ -138,11 +131,65 @@ a {/*GENERAL -- LINK*/
     color: red;
 }
 
-p {font-size: 1.4em;}
+/* GRID SECTION */
+/*
+.grid {
+    margin: 0 auto;
+    display: grid;
+    width: 75%;
+    height: 70em;
+    border: 1px solid yellow;
+    
+    grid-template: 1fr 1fr 1fr /1fr 1fr;
+    gap: 2em 2em;
+}
+.box{
+    border: 1px solid white;
+    text-align: center;
+}
 
-h1 {font-size: 4em;}
-h2 {font-size: 3.75em;}
-h3 {font-size: 3.25em;}
-h4 {font-size: 2.75em;}
-h5 {font-size: 2.25em;}
-h6 {font-size: 1.75em;}
+.box1 {
+    grid-row-start: 1;
+    grid-row-end:4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+*/
+
+/* MAIN GRID --------------------------------------------------------------------------------*/
+body main { /*GRID*/
+    margin: auto;
+    display: grid;
+    width: 90%;
+    height: auto;
+    border: 5px solid purple;
+
+    grid-template: repeat(16, 1fr) / repeat(16, 1fr)
+}
+
+/*GRID ITEMS*/
+
+.box { /*general box setup*/
+    border: 2px solid blue;
+    margin: 0;
+}
+
+.name {
+    margin: 0;
+    height: 7rem;
+    width: 40rem;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 0.25rem;
+
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column: 8;
+}
+
+
+/*
+#main-space{
+    border: 2px solid blue;
+}
+*/
