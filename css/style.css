@@ -17,8 +17,10 @@ h1 {
     font-size: 5.5rem;
 }
 
-#red-thingy{/*the red > in '<Menu>'*/
-    font-size: 1.1rem;
+.red-text {/*GENERAL -- COLOR*/
+    color: red;
+    font-size:1.7em;
+    line-height: 65%;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
@@ -79,8 +81,6 @@ h1 {
     margin: -1rem 0;
     background: transparent;
 }
-.cv-dec {
-}
 
 .nav-text-dec:visited {/*HEADER -- LINK*/
     color: blue;
@@ -134,10 +134,6 @@ a {/*GENERAL -- LINK*/
 }
 
 .nav-text-dec:active {}
-
-.red-text {/*GENERAL -- COLOR*/
-    color: red;
-}
 
 /* GRID SECTION */
 /*
