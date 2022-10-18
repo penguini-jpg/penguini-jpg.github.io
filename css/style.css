@@ -1,3 +1,7 @@
+html{
+    font-size: 20px;
+}
+
 html body {
     margin: 0;
     padding: 0;
@@ -166,7 +170,7 @@ a {/*GENERAL -- LINK*/
     max-width: 90%;
     position:initial;
     margin: 0 auto;
-    gap: 10px;
+    gap: 0.5rem;
     grid-template-areas:
         "grid-header grid-header grid-header grid-header"
         "grid-nav vav-right nav-right nav-right"
