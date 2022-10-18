@@ -101,7 +101,8 @@ body {/*MAIN*/
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 .link:hover {/*GENERAL -- LINK*/
-    border: 0.25rem solid grey;
+    /*border: 0.25rem solid grey;*/
+    background-color: rgba(122, 122, 122, 0.685);
     border-radius: 1rem;
     padding: 0.25rem;
     overflow: visible;
