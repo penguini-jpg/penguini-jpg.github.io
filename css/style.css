@@ -182,28 +182,36 @@ a {/*GENERAL -- LINK*/
     padding-top: 4rem;
     font-family: 'Alfa Slab One';
     letter-spacing: 0.25rem;
-
-    
+    border-radius: 5rem;    
 }
 #grid-nav{
     grid-area: grid-nav;
     background-color: rgb(255, 156, 89);
+
+    border-radius: 5rem;
 }
 .nav-right{
     grid-area: nav-right;
     background-color: rgb(255, 255, 100);
     
     grid-column: 2/ span 3;
+    border-radius: 5rem;
 }
 .left{
     grid-area: left;
     background-color: rgb(96, 221, 96);
+
+    border-radius: 5rem;
 }
 .right{
     grid-area: right;
     background-color: rgb(41, 141, 255);
+
+    border-radius: 5rem;
 }
 #grid-footer{
     grid-area: grid-footer;
     background-color: rgb(225, 56, 255);
+
+    border-radius: 5rem;
 }
