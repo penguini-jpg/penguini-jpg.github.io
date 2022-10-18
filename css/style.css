@@ -10,7 +10,6 @@ html body {
 * {
     scroll-behavior: smooth;
     color: white;
-    /*background-color: red;*/
 }
 
 h1 {
@@ -29,9 +28,8 @@ h1 {
     padding-left: 1rem;
     font-size: 1rem !important;
     position: fixed;
-    height: 5rem;
+    height: 4rem;
     width: 100%;
-    /*background-color: rgb(51, 103, 51, 0.851)*/
     background-color:rgba(50, 52, 55, 0.851);
 }
 
@@ -56,8 +54,7 @@ h1 {
     display: flex;
     margin-top: 1.8rem;
     list-style: none;
-    justify-content: right;
-    padding-right: 8rem;
+    padding-right: 4rem;
     word-spacing: 4rem;
     justify-content: flex-end;
 }
@@ -76,7 +73,7 @@ h1 {
 
 #head-button {/*HEADER*/
     border: 0.25rem solid red;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
     margin: -1rem 0;
     background: transparent;
