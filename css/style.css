@@ -12,7 +12,6 @@ html body {
 h1 {
     font-size: 5.5rem;
 }
-
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 #fixed-header {/*HEADER BASE LAYER*/
@@ -161,13 +160,16 @@ a {/*GENERAL -- LINK*/
     display: grid;
     max-width: 90%;
     position:initial;
-    margin: auto;
+    margin: 0 auto;
     gap: 10px;
     grid-template-areas:
         "grid-header grid-header grid-header grid-header"
-        "grid-nav grid-nav nav-right nav-right"
+        "grid-nav vav-right nav-right nav-right"
         "left left right right"
         "grid-footer grid-footer grid-footer grid-footer";
+
+    grid-template-columns: repeat(4/ 25%);
+    grid-template-rows: 16rem 25rem 35rem 15rem;
 }
 .grid-text{/*GRID TEXT*/
     text-align: center;
@@ -175,25 +177,33 @@ a {/*GENERAL -- LINK*/
 /* MAIN GRID BLOCKS -------------------------------------------------------------------------*/
 #grid-header{
     grid-area: grid-header;
-    background-color: red;
+    background-color: rgb(255, 84, 84);
+    
+    padding-top: 4rem;
+    font-family: 'Alfa Slab One';
+    letter-spacing: 0.25rem;
+
+    
 }
 #grid-nav{
     grid-area: grid-nav;
-    background-color: orange;
+    background-color: rgb(255, 156, 89);
 }
 .nav-right{
     grid-area: nav-right;
-    background-color: yellow;
+    background-color: rgb(255, 255, 100);
+    
+    grid-column: 2/ span 3;
 }
 .left{
     grid-area: left;
-    background-color: green;
+    background-color: rgb(96, 221, 96);
 }
 .right{
     grid-area: right;
-    background-color: blue;
+    background-color: rgb(41, 141, 255);
 }
 #grid-footer{
     grid-area: grid-footer;
-    background-color: purple;
+    background-color: rgb(225, 56, 255);
 }
