@@ -12,14 +12,18 @@ html body {
 h1 {
     font-size: 5.5rem;
 }
+
+#red-thingy{/*the red > in '<Menu>'*/
+    font-size: 1.1rem;
+}
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 #fixed-header {/*HEADER BASE LAYER*/
     margin: 0;
-    padding-left: 1em;
-    font-size: 1em !important;
+    padding-left: 1rem;
+    font-size: 1rem !important;
     position: fixed;
-    height: 5em;
+    height: 5rem;
     width: 100%;
     /*background-color: rgb(51, 103, 51, 0.851)*/
     background-color:rgba(50, 52, 55, 0.851);
@@ -28,7 +32,7 @@ h1 {
 #header-box {/*HEADER*/
     margin: 0;
     width: 100%;
-    padding-right: 10em;
+    padding-right: 10rem;
     background: transparent;
 }
 
@@ -37,27 +41,27 @@ h1 {
     justify-content: flex-start;
     position: fixed;
     margin: auto 0;
-    width: 6.7em;
-    height: 0em;
-    font-size: 1em !important;
+    width: 6.7rem;
+    height: 0rem;
+    font-size: 1rem !important;
 }
 
 #head-nav {/*HEADER -- box*/
     display: flex;
-    margin-top: 1.8em;
+    margin-top: 1.8rem;
     list-style: none;
     justify-content: right;
-    padding-right: 8em;
-    word-spacing: 4em;
+    padding-right: 8rem;
+    word-spacing: 4rem;
     justify-content: flex-end;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 .head-nav-item {/*HEADER -- item*/
-    margin: 0em 1.5em;
-    width: 2em;
-    height: 3em;
+    margin: 0rem 1.5rem;
+    width: 2rem;
+    height: 3rem;
     
 }
 .nav-text-dec {/*HEADER*/
@@ -65,10 +69,10 @@ h1 {
 }
 
 #head-button {/*HEADER*/
-    border: 0.25em solid red;
-    padding: 1em 2em;
-    border-radius: 1em;
-    margin: -1em 0;
+    border: 0.25rem solid red;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: -1rem 0;
     background: transparent;
 }
 .cv-dec {
@@ -79,7 +83,7 @@ h1 {
 }
 
 .nav-text-dec:hover {/*HEADER -- LINK*/
-    font-size:2em;
+    font-size:2rem;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
