@@ -133,34 +133,9 @@ a {/*GENERAL -- LINK*/
     font-size: 1rem;
 }
 
-.nav-text-dec:active {}
+/*.nav-text-dec:active {}*/
 
-/* GRID SECTION */
-/*
-.grid {
-    margin: 0 auto;
-    display: grid;
-    width: 75%;
-    height: 70em;
-    border: 1px solid yellow;
-    
-    grid-template: 1fr 1fr 1fr /1fr 1fr;
-    gap: 2em 2em;
-}
-.box{
-    border: 1px solid white;
-    text-align: center;
-}
-
-.box1 {
-    grid-row-start: 1;
-    grid-row-end:4;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-*/
-
-/* MAIN GRID --------------------------------------------------------------------------------*/
+/* MAIN GRID --------------------------------------------------------------------------------------------------------------------*/
 .grid-container{/*MAIN*/
     display: grid;
     max-width: 90%;
@@ -179,7 +154,7 @@ a {/*GENERAL -- LINK*/
 .grid-text{/*GRID TEXT*/
     text-align: center;
 }
-/* MAIN GRID BLOCKS -------------------------------------------------------------------------*/
+/* MAIN GRID BLOCKS ------------------------------------------------------------------------------------------------------------*/
 #grid-header{
     grid-area: grid-header;
     /*background-color: rgb(255, 84, 84);*/
