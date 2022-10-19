@@ -21,6 +21,8 @@ h1 {
     font-size:1.7em;
     line-height: 65%;
 }
+/* SEPERATE DEVICE SETTING------------------------------------------------------------------------------------------------------- */
+/*@media only screen and (min-width: 320px) and (max-width: 480px) {} adding a comma makes the or */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 #fixed-header {/*HEADER BASE LAYER*/
@@ -158,6 +160,7 @@ a {/*GENERAL -- LINK*/
     padding-top: 2.5rem;
     font-family: 'Alfa Slab One';
     letter-spacing: 0.25rem;
+    text-shadow: 2px 2px 0 #bbbbbb
 }
 #grid-nav{
     grid-area: grid-nav;
