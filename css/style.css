@@ -18,8 +18,9 @@ h1 {
 
 .red-text {/*GENERAL -- COLOR*/
     color: red;
-    font-size:1.7em;
-    line-height: 65%;
+    font-size:1.5rem;
+    font-weight: bolder;
+    line-height: ;
 }
 /* SEPERATE DEVICE SETTING------------------------------------------------------------------------------------------------------- */
 /*@media only screen and (min-width: 320px) and (max-width: 480px) {} adding a comma makes the or */
@@ -50,6 +51,7 @@ h1 {
     width: 6.7rem;
     height: 0rem;
     font-size: 1rem !important;
+    list-style: none;
 }
 
 #head-nav {/*HEADER -- box*/
@@ -101,7 +103,7 @@ body {/*MAIN*/
     width: 100%;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* LINK PROPERTIES-------------------------------------------------------------------------------------------------------------- */
 
 .link:hover {/*GENERAL -- LINK*/
     /*border: 0.25rem solid grey;*/
@@ -133,6 +135,18 @@ a {/*GENERAL -- LINK*/
 }
 
 /*.nav-text-dec:active {}*/
+
+/* DROPDOWN ---------------------------------------------------------------------------------------------------------------------*/
+
+.dropdown{
+    display: none;
+}
+.headname:hover{
+    background-color: red;
+}
+.headname:active .dropdown{
+    display: inline-flex;
+}
 
 /* MAIN GRID --------------------------------------------------------------------------------------------------------------------*/
 .grid-container{/*MAIN*/
