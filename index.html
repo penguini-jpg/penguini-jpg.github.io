@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1580da502c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    
+</head>
+
+<body class="">
+    <!--Intro animation-->
+
+    <div id="particles-js"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-animate">
+                <!--<p>im a<span class="animate"></span>
+                </p>
+                <h1>Hello,</h1>
+                <br>-->
+                <h1 class="solid-header">Hello, I'm</h1>
+                
+                <h1 class="moving-header"><span class="animate"></span></h1> 
+                
+            </div>
+        </div>
+    </div>
+
+    <!-------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/self.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="paragragh">
+Fully committed to the philosophy of life-long learning, I’m a software developer with a deep 
+passion for pen-testing, coding and all things cybersecurity. The unique combination of creativity, 
+logic, technology and never running out of new things to discover, drives my excitement and passion 
+for web development. When I’m not at my computer I like to spend my time reading, building, and playing guitar.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!--<p class="tab-links" onclick="opentab('experience')">Experience</p>-->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li class="paragragh"><span>Programming Languages</span>
+                                <br>HTML/CSS, Javascript, Python, Linux, PowerShell, Bash
+                            </li>
+                            <li class="paragragh"><span>Web Development</span>
+                                <br>Designing Web/App interfaces
+                            </li>
+                            <li class="paragragh"><span>Pen-Testing Tools</span>
+                                <br>Metasploit, Burpsuit, NMAP, Wireshark and Kali 
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<div class="tab-contents" id="experience">
+                        <ul>
+                            <li class="paragragh"><span>Web Design
+                            </span>
+                                <br> ~Portfolio
+                                <br> ~Blog
+                            </li>
+                            <li class="paragragh"><span>CyberSecurity
+                            </span>
+                                <br> ~HacktheBox
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="paragragh"><span>2023</span>
+                                <br>~COMPTIA A+ (Februrary)
+                                <br>~COMPTIA Netwrok+ (Februrary)
+                                <br>~COMPTIA Security+ (March)
+                            </li>
+                            <li class="paragragh"><span>2022</span>
+                                <br>~Full-Stack Engineering Codecademy (pro)
+                                <br>~Computer Science Codecademy (pro)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                    fbfgb g thrndntyed jutyfrver gearhwrjjwa bartreyhws trhwtyjd fthbsrth jwrjwr thaf art hryj wtjywrtj adf.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <h2>CyberSecurity</h2>
+                <p>
+                    fbfgb g thrndntyed jutyfrver gearhwrjjwa bartreyhws trhwtyjd fthbsrth jwrjwr thaf art hryj wtjywrtj adf.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>
+                    fbfgb g thrndntyed jutyfrver gearhwrjjwa bartreyhws trhwtyjd fthbsrth jwrjwr thaf art hryj wtjywrtj adf.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>This website is updated constantly with new features to express my</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>This is the description to the social media app</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>This is the description to the social media app</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="button">See more</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> BryanDClark1998@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> (815) 762-7782</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://linkedin.com/login/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/login/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="button button2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button button2">Submit</button>
+                </form>
+                <span id="message"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>this is the copywrite section <i class="fa-solid fa-copyright"></i></p>
+    </div>
+</div>
+
+<!-- javascript -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<!-- javascript (mobile sidebar)-->
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<!-- contact form-->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyb1ZgK0VZzHuAu0hpVxfz6D0TNVwDcpWxEso2MhuQ_ITCRnz5KSvokWR8JHIXQQn8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message = document.getElementById("message")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                message.innerHTML = ""
+        }, 5000)
+        form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<!-- moving text -->
+<script src="javascript/typed.js"></script>
+<script>
+    var typed = new Typed('.animate', {
+        strings: ["Bryan", "a web designer", "a software developer", "a ninja"],
+        typeSpeed: 150,
+        backSpeed: 50,
+        loop: true
+    })
+</script>    
+
+<!-- Particles -->
+<script src="./javascript/particles.js"></script>
+
+</body>
+</html>
