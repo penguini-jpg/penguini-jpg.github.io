@@ -54,7 +54,7 @@ nav ul li a::after{
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.75s;
+    transition: 0.25s;
 }
 
 nav ul li a:hover:after{
@@ -74,9 +74,6 @@ nav ul li a:hover:after{
     color: #fff;
     font-size: 4.5em;
     text-shadow: 0 2px 5px rgba(#fff , .5);
-}
-#animate{
-    color: chartreuse;
 }
 
 .header-animate .solid-header{
@@ -155,7 +152,7 @@ nav ul li a:hover:after{
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.75s;
+    transition: 0.5s;
  }
  .tab-links.active-link::after{
     width: 50%;
@@ -167,12 +164,13 @@ nav ul li a:hover:after{
  }
  
  .tab-contents ul li span{
-    color: #b54769;
+    color: rgb(174, 56, 43);
     font-size: 12px;
  }
 
  .tab-contents{
     display: none;
+    width: 50%;
  }
 
  .tab-contents.active-tab{
